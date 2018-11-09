@@ -1,188 +1,577 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Core Correct Health</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400|Quicksand" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Titillium+Web:400|Quicksand"
+      rel="stylesheet"
+    />
 
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-</head>
-<style type="text/css">
+  </head>
+  <style type="text/css">
     .navbar-nav {
-        margin: auto;
-        width: 100%;
-        justify-content: space-evenly;
+      margin: auto;
+      width: 100%;
+      justify-content: space-evenly;
     }
 
-    .navbar {
-        max-width: 1250px;
-        margin: auto;
-        background: white;
-        z-index: 10;
-    }
-
+.navbar {
+	max-width: 1250px;
+	margin: auto;
+	background: white;
+	z-index: 10;
+	height: 100px;
+}
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	background: white;
+	top: 0;
+}
+main{
+    margin-top:100px;
+}
     header:hover {
-        box-shadow: 0px 5px 5px 0px rgba(83, 83, 83, 0.18);
+      box-shadow: 0px 5px 5px 0px rgba(83, 83, 83, 0.18);
     }
 
     .nav-link {
-        font-family: 'Titillium Web', sans-serif;
-        font-size: 1.2em;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 1.2em;
     }
 
     .navbar-brand {
-        margin-right: 5rem;
+      margin-right: 5rem;
     }
 
     .carousel-inner img {
-        width: 100%;
-        height: auto;
-        max-height: 500px;
-        object-fit: cover;
-        filter: blur(2px);
+      width: 100%;
+      height: auto;
+      max-height: 500px;
+      object-fit: cover;
+      filter: blur(2px);
     }
 
     #ccwatermark {
-        position: absolute;
-        z-index: 10;
-        opacity: 0.7;
-        bottom: 2em;
-        height: 25%;
-        left: 2em;
+      position: absolute;
+      z-index: 10;
+      opacity: 0.7;
+      bottom: 2em;
+      height: 25%;
+      left: 2em;
     }
+
     .carousel-caption {
-	background: #00480866;
-	right: 0;
-	left: auto;
-	width: 40%;
-	padding: 1.5em;
-	top: 5em;
-	border-radius: 2px;
-	bottom: auto;
-	font-family: 'Quicksand', sans-serif;
-	text-align: justify;
-	right: 5em;
+      background: #00480866;
+      left: auto;
+      width: 40%;
+      padding: 1.5em;
+      top: 5em;
+      border-radius: 2px;
+      bottom: auto;
+      font-family: "Quicksand", sans-serif;
+      text-align: justify;
+      right: 5em;
+      border-radius: 5px;
+    }
+    .container {
+      font-family: "Quicksand", sans-serif;
+      margin-bottom: 100px;
+    }
+    .container-header {
+      text-align: center;
+      padding-bottom: 1em;
+      border-bottom: solid 1px #0000004d;
+      width: 80%;
+      margin-bottom: 1em;
+      margin: 0 auto 1em auto;
+    }
+
+    .lead {
+      text-align: center;
+      line-height: 1.75em;
+    }
+
+    .jumbotron {
+      background: none;
+    }
+    .list-container {
+      display: flex;
+      justify-content: center;
+      font-size: 1.2em;
+    }
+    .content-box {
+      padding: 3em;
+      border-radius: 10px;
+      background: #4b4b4b1a;
+    }
+    .bio-image {
+      float: left;
+      margin: 2em;
+      border-radius: 5px;
+    }
+    .bio-lead {
+      text-align: justify;
+    }
+    .credit-img {
+      margin: auto;
+      display: block;
+    }
+    .type-holder {
+	text-align: center;
+	border-radius: 5px;
+	display: flex;
+	padding: 2em;
+	height: 400px;
+	align-items: center;
+	margin: 5em auto;
 }
-</style>
+.massage-image {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+}
+.massage-text {
+	margin: 2em;
+	text-align: left;
+	max-width: 550px;
+}
+.massage-text >h4{
+	border-bottom: solid #dbdbdb 2px;
+	width: 80%;
+}
+.container > h1 {
+	text-align: center;
+	background: #d7d7d7;
+	width: 50%;
+	margin: auto auto 2em auto;
+	padding: 20px;
+	border-radius: 5px;
+}
+#sport-massage-image{
+    background-image: url("images/adult-body-close-up-275768.jpg");
+}
+#therapeutic-massage{
+    background-image: url("images/massage-486700_1920.jpg");
+}
+#deep-tissue{
+    background-image: url("images/toa-heftiba-578099-unsplash.jpg");
+}
+  </style>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="images/ccnewlogo.png" alt="core correct logo" height="80"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"
+          ><img src="images/ccnewlogo.png" alt="core correct logo" height="80"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">OSTEOPATHY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">MASSAGE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CLASSES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PRICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OSTEOPATHY</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">MASSAGE</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">CLASSES</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">PRICES</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
+      <div id="slide-images" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#slide-images" data-slide-to="0" class="active"></li>
+          <li data-target="#slide-images" data-slide-to="1"></li>
+          <li data-target="#slide-images" data-slide-to="2"></li>
+          <li data-target="#slide-images" data-slide-to="3"></li>
+        </ul>
 
-
-
-        <div id="slide-images" class="carousel slide" data-ride="carousel">
-
-
-
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#slide-images" data-slide-to="0" class="active"></li>
-                <li data-target="#slide-images" data-slide-to="1"></li>
-                <li data-target="#slide-images" data-slide-to="2"></li>
-                <li data-target="#slide-images" data-slide-to="3"></li>
-            </ul>
-
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/people-2573216_1920.jpg" alt="Los Angeles" width="1100" height="500">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>PILATES</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dui tortor, fermentum a
-                            placerat vitae, porttitor a leo. Ut fringilla ut diam vitae pellentesque. Sed a volutpat
-                            est. In id ante dignissim, convallis neque laoreet, placerat mi. Duis ut commodo neque.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/physiotherapy-567021_1920.jpg" alt="Chicago" width="1100" height="500">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>MASSAGE</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dui tortor, fermentum a
-                            placerat vitae, porttitor a leo. Ut fringilla ut diam vitae pellentesque. Sed a volutpat
-                            est. In id ante dignissim, convallis neque laoreet, placerat mi. Duis ut commodo neque.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/geert-pieters-535211-unsplash.jpg" alt="New York" width="1100" height="500">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>ZUMBA</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dui tortor, fermentum a
-                            placerat vitae, porttitor a leo. Ut fringilla ut diam vitae pellentesque. Sed a volutpat
-                            est. In id ante dignissim, convallis neque laoreet, placerat mi. Duis ut commodo neque.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/jesper-aggergaard-495757-unsplash.jpg" alt="New York" width="1100" height="500">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>OSTEOPATHY</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dui tortor, fermentum a
-                            placerat vitae, porttitor a leo. Ut fringilla ut diam vitae pellentesque. Sed a volutpat
-                            est. In id ante dignissim, convallis neque laoreet, placerat mi. Duis ut commodo neque.</p>
-                    </div>
-                </div>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/people-2573216_1920.jpg"
+              alt="Los Angeles"
+              width="1100"
+              height="500"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>PILATES</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                dui tortor, fermentum a placerat vitae, porttitor a leo. Ut
+                fringilla ut diam vitae pellentesque. Sed a volutpat est. In id
+                ante dignissim, convallis neque laoreet, placerat mi. Duis ut
+                commodo neque.
+              </p>
             </div>
-
-            <!-- Left and right controls
-            <a class="carousel-control-prev" href="#slide-images" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#slide-images" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a> -->
-
-            <!--Company logo-->
-            <img id='ccwatermark' src="images/ccnewlogo.png" alt="core-correct-logo">
-
-
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/physiotherapy-567021_1920.jpg"
+              alt="Chicago"
+              width="1100"
+              height="500"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>MASSAGE</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                dui tortor, fermentum a placerat vitae, porttitor a leo. Ut
+                fringilla ut diam vitae pellentesque. Sed a volutpat est. In id
+                ante dignissim, convallis neque laoreet, placerat mi. Duis ut
+                commodo neque.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/geert-pieters-535211-unsplash.jpg"
+              alt="New York"
+              width="1100"
+              height="500"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>ZUMBA</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                dui tortor, fermentum a placerat vitae, porttitor a leo. Ut
+                fringilla ut diam vitae pellentesque. Sed a volutpat est. In id
+                ante dignissim, convallis neque laoreet, placerat mi. Duis ut
+                commodo neque.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/jesper-aggergaard-495757-unsplash.jpg"
+              alt="New York"
+              width="1100"
+              height="500"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>OSTEOPATHY</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                dui tortor, fermentum a placerat vitae, porttitor a leo. Ut
+                fringilla ut diam vitae pellentesque. Sed a volutpat est. In id
+                ante dignissim, convallis neque laoreet, placerat mi. Duis ut
+                commodo neque.
+              </p>
+            </div>
+          </div>
         </div>
+
+        <!--
+          Left and right controls
+
+
+
+
+          <a class="carousel-control-prev" href="#slide-images" data-slide="prev">
+
+
+
+
+
+              <span class="carousel-control-prev-icon"></span>
+
+
+
+
+
+          </a>
+
+
+
+
+
+          <a class="carousel-control-next" href="#slide-images" data-slide="next">
+
+
+
+
+
+              <span class="carousel-control-next-icon"></span>
+
+
+
+
+
+          </a>
+        -->
+
+        <!-- Company logo -->
+        <img
+          id="ccwatermark"
+          src="images/ccnewlogo.png"
+          alt="core-correct-logo"
+        />
+      </div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h2 class="container-header">What is Osteopathy?</h2>
+          <p class="lead">
+            Osteopathy is a person-centred manual therapy that aims to enable
+            patients to respond and adapt to changing circumstances and to live
+            well.
+          </p>
+          <p class="lead">
+            Osteopaths are trained in therapeutic approaches that are suitable
+            for a broad range of individuals of all ages, including pregnant
+            women, children and babies.
+          </p>
+          <p class="lead">
+            Osteopathic care is delivered through a range of interventions,
+            which may include onward referral, health management advice, manual
+            therapy, exercise therapy and others. Osteopaths adapt their
+            therapeutic approach depending on the individual needs of the
+            patient and their presenting complaint. Manual therapy techniques
+            employed may include articulation and manipulation of joints and
+            soft tissues.
+          </p>
+          <p class="lead">
+            Osteopaths have been regulated by statute since 1993 by the General
+            Osteopathic Council (GOsC) and may refer to conditions for which
+            medical supervision should be sought if they hold convincing
+            evidence of the efficacy of their treatments.
+          </p>
+        </div>
+
+        <div class="container content-box">
+          <h2 class="container-header">What can osteopathy treat?</h2>
+          <div class="list-container">
+            <ul>
+              <li>Arthritic pain</li>
+              <li>Circulatory problems</li>
+              <li>Cramp</li>
+              <li>Digestion problems</li>
+              <li>Fibromyalgia</li>
+              <li>Frozen shoulder</li>
+              <li>Shoulder and elbow pain</li>
+              <li>Tennis elbow</li>
+              <li>Headaches</li>
+              <li>Joint pains, including hip and knee pain</li>
+              <li>General, acute & chronic backache, back pain</li>
+            </ul>
+            <ul>
+              <li>Generalised aches and pains</li>
+              <li>Lumbago</li>
+              <li>Migraine prevention</li>
+              <li>Minor sports injuries and tensions</li>
+              <li>Muscle spasms</li>
+              <li>Neuralgia</li>
+              <li>Inability to relax</li>
+              <li>Rheumatic pain</li>
+              <li>Sciatica</li>
+              <li>Uncomplicated mechanical neck pain</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h2 class="container-header">KEVIN WOODS B.OST, BSC(HONS)</h2>
+          <img class="bio-image" src="images/DSC_0106-240x300.jpg" alt="" />
+          <p class="lead bio-lead">
+            Kevin Woods B.Ost, BSc (Hons) Kevin studied Osteopathy at The
+            University College of Osteopathy where he achieved a BSc (Hons)
+            Degree. Prior to this Kevin has achieved a Massage Practitioners
+            Diploma from The London College of Massage. Kevin most recently
+            undertook a post-graduate certificate course in Specialist Pediatric
+            Osteopathic Practice, which he completed in July 2018.
+          </p>
+          <p class="lead bio-lead">
+            Kevin is also a certified STOTT Pilates Instructor, qualified dance
+            teacher and Licenced Zumba & Zumba Gold instructor. He has been
+            teaching in North Dublin area for the past 13 years while commuting
+            to London for his studies over the past 9 years.
+          </p>
+          <p class="lead bio-lead">
+            With a previous career as a professional dancer and performer
+            Kevin’s innate knowledge of physical movement brought him into the
+            teaching of dance and physical exercise. His interest in the
+            biomechanics of the human body stemmed from being a patient himself
+            while recovering from occupational injuries. With his experience of
+            teaching combined with his knowledge of human anatomy and physiology
+            his objectives will be to work with his patients in partnership to
+            achieving the best possible outcomes in the shortest amount of time.
+          </p>
+          <img src="images/acredited-300x155.png" class="credit-img" alt="" />
+        </div>
+      </div>
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h2 class="container-header">What to Expect?</h2>
+          <p class="lead">
+            When you attend your first consultation we will investigate the
+            source of the problem by asking you some simple questions about the
+            history of your complaint and any other factors that are relevant to
+            the problem. We’ll want to know about your past health, and any
+            injuries or investigations you may have had as far back as you might
+            remember.
+          </p>
+          <p class="lead">
+            We will carry out a full examination before making a diagnosis and
+            deciding on the most appropriate treatment for you. This will
+            usually include an assessment of your posture, and identifying ease
+            or restriction of movement in relevant parts of your body.
+          </p>
+          <p class="lead">
+            The format may vary but most patients will probably be asked to
+            undress to their underwear for this part of the examination as
+            subtleties of contour and movement are necessary for an accurate
+            assessment.
+          </p>
+          <p class="lead">
+            Depending on our findings at this stage, further tests may be
+            required similar to those carried out by general practitioners, such
+            as reflexes, blood pressure or using a stethoscope to listen to your
+            heart or lungs. In some cases it may be necessary to refer you to
+            your GP or a specialist for further investigation i.e. X-ray or MRI.
+          </p>
+          <p class="lead">
+            You will be given a provisional diagnosis and our view of whether
+            osteopathic treatment can overcome or help to alleviate the symptoms
+            and the treatment approach will be explained. With your consent,
+            your first consultation will usually be concluded with the most
+            appropriate treatment for that day.
+          </p>
+        </div>
+      </div>
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>OUR MASSAGE TYPES</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            eum, provident ipsa alias consequatur molestiae tempora eligendi
+            sint quis dolorum sequi voluptates repudiandae temporibus ex aliquid
+            beatae iusto similique unde?
+          </p>
+        </div>
+        <div class="container massage-types">
+          <div class="type-holder">
+                <div class="massage-image" id="sport-massage-image">
+                    <!-- <img src="images/adult-body-close-up-275768.jpg" alt="" class="massage-image"> -->
+                </div>
+                <div class="massage-text">
+                        <h4>SPORTS MASSAGE</h4>
+                        <p>
+                          Sports massage is a form of massage involving the manipulation of
+                          soft tissue to benefit a person engaged in regular physical
+                          activity. Soft tissue is connective tissue that has not hardened
+                          into bone and cartilage; it includes skin, muscles, tendons,
+                          ligaments and fascia (a form of connective tissue that lines and
+                          ensheathes the other soft tissues). 
+                          </p>
+                          <p>
+                              Sports massage is designed to
+                          assist in correcting problems and imbalances in soft tissue that
+                          are caused from repetitive and strenuous physical activity and
+                          trauma. The application of sports massage, prior to and after
+                          exercise, may enhance performance, aid recovery and prevent
+                          injury.
+                        </p>
+                </div>
+
+
+          </div>
+          <div class="type-holder">
+
+                <div class="massage-text">
+                        <h4>THERAPEUTIC MASSAGE</h4>
+                        <p>
+                          Therapeutic Massage is a combination of Relaxation Massage and
+                          Remedial Massage to not only relax your whole body and at the same
+                          time, work through some of the muscle issues or “tight spots” you
+                          may be experiencing. 
+                          </p>
+                          <p>Massage therapy aims to improve your
+                          circulation, which enhances the delivery of oxygen and nutrients
+                          to muscle cells and helps remove waste products or reduce
+                          swelling. These circulatory effects of massage may have value in
+                          the treatment of some inflammatory conditions, such as arthritis.
+                          </p>
+                          <p>
+                          Massage therapy induces a relaxation response, which lowers your
+                          heart rate, breathing rate, and blood pressure; plus boosts your
+                          immune system; and generally decreases the physical effects of
+                          stress
+                        </p>
+                </div>
+                <div class="massage-image" id="therapeutic-massage">
+                        <!-- <img src="images/massage-486700_1920.jpg" alt="" class="massage-image"> -->
+                    </div>
+          </div>
+          <div class="type-holder">
+                <div class="massage-image" id="deep-tissue">
+                    <!-- <img src="images/toa-heftiba-578099-unsplash.jpg" alt="" class="massage-image"> -->
+                </div>
+                <div class="massage-text">
+                        <h4>DEEP TISSUE MASSAGE</h4>
+                        <p>
+                          Deep tissue massage therapy is similar to Swedish massage, but the
+                          deeper pressure is beneficial in releasing chronic muscle tension.
+                          The focus is on the deepest layers of muscle tissue, tendons and
+                          fascia (the protective layer surrounding muscles, bones and
+                          joints).
+                        </p>
+                </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Fluid jumbotron</h1>
+              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
     </main>
 
-
-
     <script>
-        $('.carousel').carousel({
-            interval: 3000
-        })
+      $(".carousel").carousel({
+        interval: 3000
+      });
     </script>
-</body>
-
+  </body>
 </html>
