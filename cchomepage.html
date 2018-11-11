@@ -6,7 +6,7 @@
     <title>Core Correct Health</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://fonts.googleapis.com/css?family=Titillium+Web:400|Quicksand"
+      href="https://fonts.googleapis.com/css?family=Titillium+Web:400|Quicksand|Lobster"
       rel="stylesheet"
     />
 
@@ -17,158 +17,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="cchomepage.css" type="text/css" />
   </head>
-  <style type="text/css">
-    .navbar-nav {
-      margin: auto;
-      width: 100%;
-      justify-content: space-evenly;
-    }
-
-.navbar {
-	max-width: 1250px;
-	margin: auto;
-	background: white;
-	z-index: 10;
-	height: 100px;
-}
-header {
-	position: fixed;
-	width: 100%;
-	z-index: 100;
-	background: white;
-	top: 0;
-}
-main{
-    margin-top:100px;
-}
-    header:hover {
-      box-shadow: 0px 5px 5px 0px rgba(83, 83, 83, 0.18);
-    }
-
-    .nav-link {
-      font-family: "Titillium Web", sans-serif;
-      font-size: 1.2em;
-    }
-
-    .navbar-brand {
-      margin-right: 5rem;
-    }
-
-    .carousel-inner img {
-      width: 100%;
-      height: auto;
-      max-height: 500px;
-      object-fit: cover;
-      filter: blur(2px);
-    }
-
-    #ccwatermark {
-      position: absolute;
-      z-index: 10;
-      opacity: 0.7;
-      bottom: 2em;
-      height: 25%;
-      left: 2em;
-    }
-
-    .carousel-caption {
-      background: #00480866;
-      left: auto;
-      width: 40%;
-      padding: 1.5em;
-      top: 5em;
-      border-radius: 2px;
-      bottom: auto;
-      font-family: "Quicksand", sans-serif;
-      text-align: justify;
-      right: 5em;
-      border-radius: 5px;
-    }
-    .container {
-      font-family: "Quicksand", sans-serif;
-      margin-bottom: 100px;
-    }
-    .container-header {
-      text-align: center;
-      padding-bottom: 1em;
-      border-bottom: solid 1px #0000004d;
-      width: 80%;
-      margin-bottom: 1em;
-      margin: 0 auto 1em auto;
-    }
-
-    .lead {
-      text-align: center;
-      line-height: 1.75em;
-    }
-
-    .jumbotron {
-      background: none;
-    }
-    .list-container {
-      display: flex;
-      justify-content: center;
-      font-size: 1.2em;
-    }
-    .content-box {
-      padding: 3em;
-      border-radius: 10px;
-      background: #4b4b4b1a;
-    }
-    .bio-image {
-      float: left;
-      margin: 2em;
-      border-radius: 5px;
-    }
-    .bio-lead {
-      text-align: justify;
-    }
-    .credit-img {
-      margin: auto;
-      display: block;
-    }
-    .type-holder {
-	text-align: center;
-	border-radius: 5px;
-	display: flex;
-	padding: 2em;
-	height: 400px;
-	align-items: center;
-	margin: 5em auto;
-}
-.massage-image {
-	height: 100%;
-	width: 100%;
-	background-size: cover;
-}
-.massage-text {
-	margin: 2em;
-	text-align: left;
-	max-width: 550px;
-}
-.massage-text >h4{
-	border-bottom: solid #dbdbdb 2px;
-	width: 80%;
-}
-.container > h1 {
-	text-align: center;
-	background: #d7d7d7;
-	width: 50%;
-	margin: auto auto 2em auto;
-	padding: 20px;
-	border-radius: 5px;
-}
-#sport-massage-image{
-    background-image: url("images/adult-body-close-up-275768.jpg");
-}
-#therapeutic-massage{
-    background-image: url("images/massage-486700_1920.jpg");
-}
-#deep-tissue{
-    background-image: url("images/toa-heftiba-578099-unsplash.jpg");
-}
-  </style>
+  <style type="text/css"></style>
 
   <body>
     <header>
@@ -192,12 +43,12 @@ main{
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">OSTEOPATHY</a>
+              <a class="nav-link" href="#osteo-section">OSTEOPATHY</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">MASSAGE</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">CLASSES</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">PRICES</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+            <li class="nav-item"><a class="nav-link" href="#massage-section">MASSAGE</a></li>
+            <li class="nav-item"><a class="nav-link" href="#classes-section">CLASSES</a></li>
+            <li class="nav-item"><a class="nav-link" href="#prices-section">RATES</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-section">CONTACT</a></li>
           </ul>
         </div>
       </nav>
@@ -287,46 +138,6 @@ main{
             </div>
           </div>
         </div>
-
-        <!--
-          Left and right controls
-
-
-
-
-          <a class="carousel-control-prev" href="#slide-images" data-slide="prev">
-
-
-
-
-
-              <span class="carousel-control-prev-icon"></span>
-
-
-
-
-
-          </a>
-
-
-
-
-
-          <a class="carousel-control-next" href="#slide-images" data-slide="next">
-
-
-
-
-
-              <span class="carousel-control-next-icon"></span>
-
-
-
-
-
-          </a>
-        -->
-
         <!-- Company logo -->
         <img
           id="ccwatermark"
@@ -334,7 +145,8 @@ main{
           alt="core-correct-logo"
         />
       </div>
-      <div class="jumbotron jumbotron-fluid">
+      <div id="osteo-section" class="section-separator"></div>
+      <div class="jumbotron jumbotron-fluid" >
         <div class="container">
           <h2 class="container-header">What is Osteopathy?</h2>
           <p class="lead">
@@ -467,10 +279,10 @@ main{
           </p>
         </div>
       </div>
-
+      <div id="massage-section" class="section-separator"></div>
       <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1>OUR MASSAGE TYPES</h1>
+        <div class="container massage-header">
+          <h1>OUR MASSAGE TYPES</h1>
           <p class="lead">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
             eum, provident ipsa alias consequatur molestiae tempora eligendi
@@ -480,94 +292,242 @@ main{
         </div>
         <div class="container massage-types">
           <div class="type-holder">
-                <div class="massage-image" id="sport-massage-image">
-                    <!-- <img src="images/adult-body-close-up-275768.jpg" alt="" class="massage-image"> -->
-                </div>
-                <div class="massage-text">
-                        <h4>SPORTS MASSAGE</h4>
-                        <p>
-                          Sports massage is a form of massage involving the manipulation of
-                          soft tissue to benefit a person engaged in regular physical
-                          activity. Soft tissue is connective tissue that has not hardened
-                          into bone and cartilage; it includes skin, muscles, tendons,
-                          ligaments and fascia (a form of connective tissue that lines and
-                          ensheathes the other soft tissues). 
-                          </p>
-                          <p>
-                              Sports massage is designed to
-                          assist in correcting problems and imbalances in soft tissue that
-                          are caused from repetitive and strenuous physical activity and
-                          trauma. The application of sports massage, prior to and after
-                          exercise, may enhance performance, aid recovery and prevent
-                          injury.
-                        </p>
-                </div>
-
-
+            <div class="massage-image" id="sport-massage-image"></div>
+            <h4>SPORTS MASSAGE</h4>
+            <div class="massage-text">
+              <p>
+                Sports massage is a form of massage involving the manipulation
+                of soft tissue to benefit a person engaged in regular physical
+                activity. Soft tissue is connective tissue that has not hardened
+                into bone and cartilage; it includes skin, muscles, tendons,
+                ligaments and fascia (a form of connective tissue that lines and
+                ensheathes the other soft tissues).
+              </p>
+              <p>
+                Sports massage is designed to assist in correcting problems and
+                imbalances in soft tissue that are caused from repetitive and
+                strenuous physical activity and trauma. The application of
+                sports massage, prior to and after exercise, may enhance
+                performance, aid recovery and prevent injury.
+              </p>
+            </div>
           </div>
           <div class="type-holder">
-
-                <div class="massage-text">
-                        <h4>THERAPEUTIC MASSAGE</h4>
-                        <p>
-                          Therapeutic Massage is a combination of Relaxation Massage and
-                          Remedial Massage to not only relax your whole body and at the same
-                          time, work through some of the muscle issues or “tight spots” you
-                          may be experiencing. 
-                          </p>
-                          <p>Massage therapy aims to improve your
-                          circulation, which enhances the delivery of oxygen and nutrients
-                          to muscle cells and helps remove waste products or reduce
-                          swelling. These circulatory effects of massage may have value in
-                          the treatment of some inflammatory conditions, such as arthritis.
-                          </p>
-                          <p>
-                          Massage therapy induces a relaxation response, which lowers your
-                          heart rate, breathing rate, and blood pressure; plus boosts your
-                          immune system; and generally decreases the physical effects of
-                          stress
-                        </p>
-                </div>
-                <div class="massage-image" id="therapeutic-massage">
-                        <!-- <img src="images/massage-486700_1920.jpg" alt="" class="massage-image"> -->
-                    </div>
+            <div class="massage-image" id="therapeutic-massage"></div>
+            <h4>THERAPEUTIC MASSAGE</h4>
+            <div class="massage-text">
+              <p>
+                Therapeutic Massage is a combination of Relaxation Massage and
+                Remedial Massage to not only relax your whole body and at the
+                same time, work through some of the muscle issues or “tight
+                spots” you may be experiencing.
+              </p>
+              <p>
+                Massage therapy aims to improve your circulation, which enhances
+                the delivery of oxygen and nutrients to muscle cells and helps
+                remove waste products or reduce swelling. These circulatory
+                effects of massage may have value in the treatment of some
+                inflammatory conditions, such as arthritis.
+              </p>
+              <p>
+                Massage therapy induces a relaxation response, which lowers your
+                heart rate, breathing rate, and blood pressure; plus boosts your
+                immune system; and generally decreases the physical effects of
+                stress
+              </p>
+            </div>
           </div>
           <div class="type-holder">
-                <div class="massage-image" id="deep-tissue">
-                    <!-- <img src="images/toa-heftiba-578099-unsplash.jpg" alt="" class="massage-image"> -->
-                </div>
-                <div class="massage-text">
-                        <h4>DEEP TISSUE MASSAGE</h4>
-                        <p>
-                          Deep tissue massage therapy is similar to Swedish massage, but the
-                          deeper pressure is beneficial in releasing chronic muscle tension.
-                          The focus is on the deepest layers of muscle tissue, tendons and
-                          fascia (the protective layer surrounding muscles, bones and
-                          joints).
-                        </p>
-                </div>
-
-
+            <div class="massage-image" id="deep-tissue"></div>
+            <h4>DEEP TISSUE MASSAGE</h4>
+            <div class="massage-text">
+              <p>
+                Deep tissue massage therapy is similar to Swedish massage, but
+                the deeper pressure is beneficial in releasing chronic muscle
+                tension. The focus is on the deepest layers of muscle tissue,
+                tendons and fascia (the protective layer surrounding muscles,
+                bones and joints).
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
+      <div id="classes-section" class="section-separator"></div>
       <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-4">Fluid jumbotron</h1>
-              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <div class="container massage-header">
+          <h1>OUR CLASSES</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            eum, provident ipsa alias consequatur molestiae tempora eligendi
+            sint quis dolorum sequi voluptates repudiandae temporibus ex aliquid
+            beatae iusto similique unde?
+          </p>
+        </div>
+        <div class="container massage-types">
+          <div class="type-holder">
+            <div class="massage-image" id="pilates-class"></div>
+            <h4>PILATES</h4>
+            <div class="massage-text">
+              <p>
+                Pilates is a method of exercise that consists of low-impact
+                flexibility and muscular strength and endurance movements.
+                Pilates emphasizes proper postural alignment, core strength and
+                muscle balance. Pilates is named for its creator, Joseph
+                Pilates, who developed the exercises in the 1920s.
+              </p>
             </div>
           </div>
-
-
-
-
-
-
-
-
+          <div class="type-holder">
+            <div class="massage-image" id="zumba-class"></div>
+            <h4>ZUMBA</h4>
+            <div class="massage-text">
+              <p>
+                Grooving to the beats of salsa, flamenco, and merengue music
+                feels more like a dance party than a workout, which is exactly
+                what makes Zumba so popular. The Latin-inspired dance workout is
+                one of the most popular group exercise classes in the world.
+              </p>
+              <p>
+                The high-energy classes are set to upbeat music and feature
+                choreographed dance numbers that you might see in a nightclub.
+                You don’t need to be a great dancer to feel welcome in a Zumba
+                class. With the tag line, “Ditch the Workout, Join the Party,”
+                the classes emphasize moving to the music and having a good
+                time, no rhythm required.
+              </p>
+            </div>
+          </div>
+          <div class="type-holder">
+            <div class="massage-image" id="gold-class"></div>
+            <h4>ZUMBA GOLD</h4>
+            <div class="massage-text">
+              <p>
+                Perfect For active older adults who are looking for a modified
+                Zumba®class that recreates the original moves you love at a
+                lower-intensity.
+              </p>
+              <p>
+                The design of the class introduces easy-to-follow
+                Zumba®choreography that focuses on balance, range of motion and
+                coordination. Come ready to sweat, and prepare to leave
+                empowered and feeling strong.
+              </p>
+              <p>
+                Class focuses on all elements of fitness: cardiovascular,
+                muscular conditioning, flexibility and balance!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h2 class="container-header">CLASSES TIMETABLE</h2>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>PILATES</th>
+                <th>ZUMBA</th>
+                <th>ZUMBA GOLD</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MONDAY</td>
+                <td>St. Patrick’s SNS, Skerries <span>7pm – 8pm</span></td>
+                <td>St. Patricks SNS Skerries<span>8pm – 9pm</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>TUESDAY</td>
+                <td>Skerries Sailing Club <span>9.30am – 10.30am</span></td>
+                <td></td>
+                <td>
+                  Skerries Community Centre <span>11.30am – 12.15pm</span>
+                </td>
+              </tr>
+              <tr>
+                <td>THURSDAY</td>
+                <td></td>
+                <td>Lusk Scouts Den, Lusk <span>8.15pm – 9.15pm</span></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="prices-section" class="section-separator"></div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container massage-header"><h1>RATES</h1></div>
+        <div class="container massage-types">
+          <div class="type-holder">
+            <h4>OSTEOPATHY</h4>
+            <img src="images/spine(1).svg" class="icon-tag" alt="" />
+            <div class="massage-text price-box">
+              <h4>Initial consultation</h4>
+              <h6>60 minutes</h6>
+              <div><h4>€70 / £70</h4></div>
+            </div>
+            <div class="massage-text price-box">
+              <h4>Follow up treatment</h4>
+              <h6>30 minutes</h6>
+              <div><h4>55€ / £55</h4></div>
+            </div>
+          </div>
+          <div class="type-holder">
+            <h4>MASSAGE</h4>
+            <img src="images/massage.svg" class="icon-tag" alt="" />
+            <div class="massage-text price-box">
+              <h4>Half Hour Treatment</h4>
+              <h6>30 minutes</h6>
+              <div><h4>€40 / £40</h4></div>
+            </div>
+            <div class="massage-text price-box">
+              <h4>One Hour Treatment</h4>
+              <h6>60 minutes</h6>
+              <div><h4>€70 / £70</h4></div>
+            </div>
+          </div>
+          <div class="type-holder">
+            <h4>CLASSES</h4>
+            <img src="images/warrior.svg" class="icon-tag" alt="" />
+            <div class="massage-text price-box">
+              <h4>Pilates</h4>
+              <h6>8 Class Term</h6>
+              <div><h4>€100 / £100</h4></div>
+            </div>
+            <div class="massage-text price-box">
+              <h4>Zumba</h4>
+              <h6>6 Weeks term</h6>
+              <div><h4>€60 / £60</h4></div>
+              <p>€100/£100 2 classes per week</p>
+            </div>
+            <div class="massage-text price-box">
+              <h4>Zumba Gold</h4>
+              <h6>6 Week Term</h6>
+              <div><h4>€50 / £50</h4></div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h3>PAYMENT POLICY</h3>
+          <p>
+            We request 24 hour’s notice of cancellation or rescheduling to allow
+            us to fill that slot in the diary. You will be requested that you
+            pay 50% of any missed treatment that you rebook and attend within 7
+            days. Any appointment that is missed and not rebooked will be
+            charged at 100% of the fee before a new appointment can be booked.
+            We hope you share our commitment to your appointment.
+          </p>
+        </div>
+      </div>
+      <div id="contact-section" class="section-separator"></div>
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+              <h2 class="container-header">Contact Us</h2>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          </div>
+        </div>
     </main>
-
     <script>
       $(".carousel").carousel({
         interval: 3000
