@@ -6,7 +6,7 @@
     <title>Core Correct Health</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://fonts.googleapis.com/css?family=Titillium+Web:400|Quicksand|Lobster"
+      href="https://fonts.googleapis.com/css?family=Titillium+Web:400|Quicksand:400,500|Lobster|Cormorant+Garamond:400i"
       rel="stylesheet"
     />
 
@@ -19,519 +19,429 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="cchomepage.css" type="text/css" />
   </head>
-  <style type="text/css"></style>
-
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"
-          ><img src="images/ccnewlogo.png" alt="core correct logo" height="80"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#osteo-section">OSTEOPATHY</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#massage-section">MASSAGE</a></li>
-            <li class="nav-item"><a class="nav-link" href="#classes-section">CLASSES</a></li>
-            <li class="nav-item"><a class="nav-link" href="#prices-section">RATES</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact-section">CONTACT</a></li>
-          </ul>
-        </div>
+      <a class="navbar-brand" href="#">
+      <img class="logo-image" src="http://core-correct.com/wp-content/uploads/2018/11/ccnewlogo.png" alt="core correct logo" height="80">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      </button>
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+         <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+         <li class="nav-item"><a class="nav-link" href="#osteo-section">OSTEOPATHY</a></li>
+         <li class="nav-item"><a class="nav-link" href="#massage-section">MASSAGE</a></li>
+         <li class="nav-item"><a class="nav-link" href="#classes-section">CLASSES</a></li>
+         <li class="nav-item"><a class="nav-link" href="#prices-section">RATES</a></li>
+         <li class="nav-item"><a class="nav-link" href="#contact-section">CONTACT</a></li>
+         <li class="nav-item"><a class="nav-link book-link hidden" href="#">BOOK NOW</a></li>
+      </ul>
+      </div>
       </nav>
-    </header>
-    <main>
+      </header>
       <div id="slide-images" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#slide-images" data-slide-to="0" class="active"></li>
-          <li data-target="#slide-images" data-slide-to="1"></li>
-          <li data-target="#slide-images" data-slide-to="2"></li>
-          <li data-target="#slide-images" data-slide-to="3"></li>
-        </ul>
-
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="images/people-2573216_1920.jpg"
-              alt="Los Angeles"
-              width="1100"
-              height="500"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>PILATES</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                dui tortor, fermentum a placerat vitae, porttitor a leo. Ut
-                fringilla ut diam vitae pellentesque. Sed a volutpat est. In id
-                ante dignissim, convallis neque laoreet, placerat mi. Duis ut
-                commodo neque.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="images/physiotherapy-567021_1920.jpg"
-              alt="Chicago"
-              width="1100"
-              height="500"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>MASSAGE</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                dui tortor, fermentum a placerat vitae, porttitor a leo. Ut
-                fringilla ut diam vitae pellentesque. Sed a volutpat est. In id
-                ante dignissim, convallis neque laoreet, placerat mi. Duis ut
-                commodo neque.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="images/geert-pieters-535211-unsplash.jpg"
-              alt="New York"
-              width="1100"
-              height="500"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>ZUMBA</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                dui tortor, fermentum a placerat vitae, porttitor a leo. Ut
-                fringilla ut diam vitae pellentesque. Sed a volutpat est. In id
-                ante dignissim, convallis neque laoreet, placerat mi. Duis ut
-                commodo neque.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="images/jesper-aggergaard-495757-unsplash.jpg"
-              alt="New York"
-              width="1100"
-              height="500"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>OSTEOPATHY</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                dui tortor, fermentum a placerat vitae, porttitor a leo. Ut
-                fringilla ut diam vitae pellentesque. Sed a volutpat est. In id
-                ante dignissim, convallis neque laoreet, placerat mi. Duis ut
-                commodo neque.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Company logo -->
-        <img
-          id="ccwatermark"
-          src="images/ccnewlogo.png"
-          alt="core-correct-logo"
-        />
+      <ul class="carousel-indicators">
+         <li data-target="#slide-images" data-slide-to="0" class="active"></li>
+         <li data-target="#slide-images" data-slide-to="1"></li>
+         <li data-target="#slide-images" data-slide-to="2"></li>
+         <li data-target="#slide-images" data-slide-to="3"></li>
+      </ul>
+      <div class="carousel-inner">
+      <div class="carousel-item active">
+      <img class="carousel-image" srcset="http://core-correct.com/wp-content/uploads/2019/01/osteopathy-small_result.jpg 500w,
+                   http://core-correct.com/wp-content/uploads/2019/01/osteopathy-medium_result.jpg 1000w,
+                   http://core-correct.com/wp-content/uploads/2019/01/osteopathy-large_result.jpg 1400w" sizes="(max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  1400px" src="http://core-correct.com/wp-content/uploads/2019/01/osteopathy-large_result.jpg" alt="osteopathy-treatment">
+      <div class="carousel-caption d-none d-md-block">
+      <div class="rating-stars">OSTEOPATHY</div>
+      "Both myself and my 11 year old son have received on going treatment from Kevin.  We have both found the treatment most beneficial and are much better after treatment. I would highly recommend him, very professional with a genuinely friendly atmosphere."
+      -Grainne Teeling, Bettystown, Co. Meath, Ireland  ★★★★★
+      
+      </div>
+      </div>
+      <div class="carousel-item">
+      <img class="carousel-image" srcset="http://core-correct.com/wp-content/uploads/2019/01/massage-small_result.jpg 500w,
+                   http://core-correct.com/wp-content/uploads/2019/01/massage-medium_result.jpg 1000w,
+                   http://core-correct.com/wp-content/uploads/2019/01/massage-large_result.jpg 1400w" sizes="(max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  1400px" src="http://core-correct.com/wp-content/uploads/2019/01/massage-large_result.jpg" alt="massage-treatment">
+      <div class="carousel-caption d-none d-md-block">
+      <div class="rating-stars">MASSAGE</div>
+      <strong></strong> - "As being a professional dancer I have truly benefited from Kevin's treatments. I always feel at ease after treatment and feel that my body can breathe again.  I see Kevin on a regular basis."
+      -Toke Strandby, London, UK  ★★★★★
+      
+      </div>
+      </div>
+      <div class="carousel-item">
+      <img class="carousel-image" srcset="http://core-correct.com/wp-content/uploads/2019/01/pilates-small_result.jpg 500w,
+                   http://core-correct.com/wp-content/uploads/2019/01/pilates-medium_result.jpg 1000w,
+                   http://core-correct.com/wp-content/uploads/2019/01/pilates-large_result.jpg 1400w" sizes="(max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  1400px" src="http://core-correct.com/wp-content/uploads/2019/01/pilates-large_result.jpg" alt="pilates-exercise">
+      <div class="carousel-caption d-none d-md-block">
+      <div class="rating-stars">PILATES</div>
+      "I find Pilates wonderful for my flexibility and for combatting my back pain over the past 8 years at Kevin's classes."
+      -Leslie Jordan, Skerries, Co. Dublin, Ireland  ★★★★★
+      
+      </div>
+      </div>
+      <div class="carousel-item">
+      <img class="carousel-image" srcset="http://core-correct.com/wp-content/uploads/2019/01/zumba-small_result.jpg 500w,
+                   http://core-correct.com/wp-content/uploads/2019/01/zumba-medium_result.jpg 1000w,
+                   http://core-correct.com/wp-content/uploads/2019/01/zumba-large_result.jpg" sizes="(max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  1400px" src="http://core-correct.com/wp-content/uploads/2019/01/zumba-large_result.jpg" alt="zumba-treatment">
+      <div class="carousel-caption d-none d-md-block">
+      <div class="rating-stars">ZUMBA</div>
+      "For me Zumba Gold is like taking all of the fitness classes I have done (over 40 years) and turning a very real workout into pure pleasure.  Kevin has combined elegant dance moves with your favourite music and made it easy and fun to follow...the class ALWAYS makes me smile."
+      -Jo Price, Skerries, Co. Dublin, Ireland  ★★★★★
+      
+      </div>
+      </div>
+      </div>
+      <div>
+      <img id="ccwatermark" src="http://core-correct.com/wp-content/uploads/2018/11/ccnewlogo.png" alt="core-correct-logo"></div>
+      </div>
+      <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+      <h2 class="container-header">KEVIN WOODS B.OST, BSC(HONS), PG Cert SPOP</h2>
+      <img class="bio-image" src="http://core-correct.com/wp-content/uploads/2018/10/DSC_0106-e1540814632210.jpg" alt="Kevin Woods">
+      <p class="lead bio-lead">Kevin studied Osteopathy at <strong>The University College of Osteopathy</strong> where he achieved a <strong>BSc (Hons) Degree</strong>. Prior to this Kevin has achieved a <strong>Massage Practitioners Diploma</strong> from <strong>The London College of Massage</strong>. Kevin most recently undertook a post-graduate certificate course in <strong>Specialist Pediatric Osteopathic Practice</strong>, which he completed in July 2018.</p>
+      <p class="lead bio-lead">Kevin is also a certified <strong>STOTT Pilates Instructor, qualified dance teacher and Licenced Zumba &amp; Zumba Gold instructor</strong>. He has been teaching in North Dublin area for the past 13 years while commuting to London for his studies over the past 9 years.</p>
+      <p class="lead bio-lead">With a previous career as a professional dancer and performer Kevin’s innate knowledge of physical movement brought him into the teaching of dance and physical exercise. His interest in the biomechanics of the human body stemmed from being a patient himself while recovering from occupational injuries. With his experience of teaching combined with his knowledge of human anatomy and physiology his objectives will be to work with his patients in partnership to achieving the best possible outcomes in the shortest amount of time.</p>
+      <img class="credit-img" src="http://core-correct.com/wp-content/uploads/2018/01/acredited.png" alt="Insitute of Osteopathy accreditation">
+      
+      </div>
       </div>
       <div id="osteo-section" class="section-separator"></div>
-      <div class="jumbotron jumbotron-fluid" >
-        <div class="container">
-          <h2 class="container-header">What is Osteopathy?</h2>
-          <p class="lead">
-            Osteopathy is a person-centred manual therapy that aims to enable
-            patients to respond and adapt to changing circumstances and to live
-            well.
-          </p>
-          <p class="lead">
-            Osteopaths are trained in therapeutic approaches that are suitable
-            for a broad range of individuals of all ages, including pregnant
-            women, children and babies.
-          </p>
-          <p class="lead">
-            Osteopathic care is delivered through a range of interventions,
-            which may include onward referral, health management advice, manual
-            therapy, exercise therapy and others. Osteopaths adapt their
-            therapeutic approach depending on the individual needs of the
-            patient and their presenting complaint. Manual therapy techniques
-            employed may include articulation and manipulation of joints and
-            soft tissues.
-          </p>
-          <p class="lead">
-            Osteopaths have been regulated by statute since 1993 by the General
-            Osteopathic Council (GOsC) and may refer to conditions for which
-            medical supervision should be sought if they hold convincing
-            evidence of the efficacy of their treatments.
-          </p>
-        </div>
-
-        <div class="container content-box">
-          <h2 class="container-header">What can osteopathy treat?</h2>
-          <div class="list-container">
-            <ul>
-              <li>Arthritic pain</li>
-              <li>Circulatory problems</li>
-              <li>Cramp</li>
-              <li>Digestion problems</li>
-              <li>Fibromyalgia</li>
-              <li>Frozen shoulder</li>
-              <li>Shoulder and elbow pain</li>
-              <li>Tennis elbow</li>
-              <li>Headaches</li>
-              <li>Joint pains, including hip and knee pain</li>
-              <li>General, acute & chronic backache, back pain</li>
-            </ul>
-            <ul>
-              <li>Generalised aches and pains</li>
-              <li>Lumbago</li>
-              <li>Migraine prevention</li>
-              <li>Minor sports injuries and tensions</li>
-              <li>Muscle spasms</li>
-              <li>Neuralgia</li>
-              <li>Inability to relax</li>
-              <li>Rheumatic pain</li>
-              <li>Sciatica</li>
-              <li>Uncomplicated mechanical neck pain</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
       <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h2 class="container-header">KEVIN WOODS B.OST, BSC(HONS)</h2>
-          <img class="bio-image" src="images/DSC_0106-240x300.jpg" alt="" />
-          <p class="lead bio-lead">
-            Kevin Woods B.Ost, BSc (Hons) Kevin studied Osteopathy at The
-            University College of Osteopathy where he achieved a BSc (Hons)
-            Degree. Prior to this Kevin has achieved a Massage Practitioners
-            Diploma from The London College of Massage. Kevin most recently
-            undertook a post-graduate certificate course in Specialist Pediatric
-            Osteopathic Practice, which he completed in July 2018.
-          </p>
-          <p class="lead bio-lead">
-            Kevin is also a certified STOTT Pilates Instructor, qualified dance
-            teacher and Licenced Zumba & Zumba Gold instructor. He has been
-            teaching in North Dublin area for the past 13 years while commuting
-            to London for his studies over the past 9 years.
-          </p>
-          <p class="lead bio-lead">
-            With a previous career as a professional dancer and performer
-            Kevin’s innate knowledge of physical movement brought him into the
-            teaching of dance and physical exercise. His interest in the
-            biomechanics of the human body stemmed from being a patient himself
-            while recovering from occupational injuries. With his experience of
-            teaching combined with his knowledge of human anatomy and physiology
-            his objectives will be to work with his patients in partnership to
-            achieving the best possible outcomes in the shortest amount of time.
-          </p>
-          <img src="images/acredited-300x155.png" class="credit-img" alt="" />
-        </div>
+      <div class="container">
+      <h2 class="container-header">What is Osteopathy?</h2>
+      <p class="lead">
+                  Osteopathy is a person-centred manual therapy that aims to enable patients to respond and adapt to changing circumstances and to live well.
+      
+      <p class="lead">
+                  Osteopaths are trained in therapeutic approaches that are suitable for a broad range of individuals of all ages, including pregnant women, children and babies.
+      
+      <p class="lead">
+                  Osteopathic care is delivered through a range of interventions, which may include <strong>onward referral, health management advice, manual therapy, exercise therapy and others</strong>. Osteopaths adapt their therapeutic approach depending on the individual needs of the patient and their presenting complaint. Manual therapy techniques employed may include articulation and manipulation of joints and soft tissues.
+      
+      <p class="lead">
+                  Osteopaths have been <strong>regulated by statute since 1993 by the General Osteopathic Council (GOsC)</strong> and may refer to conditions for which medical supervision should be sought if they hold convincing evidence of the efficacy of their treatments.
+      
       </div>
-
+      <div class="container content-box">
+      <h2 class="container-header">What can osteopathy treat?</h2>
+      <div class="list-container">
+      <ul>
+         <li>Arthritic pain</li>
+         <li>Circulatory problems</li>
+         <li>Cramp</li>
+         <li>Digestion problems</li>
+         <li>Fibromyalgia</li>
+         <li>Frozen shoulder</li>
+         <li>Shoulder and elbow pain</li>
+         <li>Tennis elbow</li>
+         <li>Headaches</li>
+         <li>Joint pains, including hip and knee pain</li>
+         <li>General, acute &amp; chronic backache, back pain</li>
+      </ul>
+      <ul>
+         <li>Generalised aches and pains</li>
+         <li>Lumbago</li>
+         <li>Migraine prevention</li>
+         <li>Minor sports injuries and tensions</li>
+         <li>Muscle spasms</li>
+         <li>Neuralgia</li>
+         <li>Inability to relax</li>
+         <li>Rheumatic pain</li>
+         <li>Sciatica</li>
+         <li>Uncomplicated mechanical neck pain</li>
+      </ul>
+      </div>
+      </div>
+      </div>
       <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h2 class="container-header">What to Expect?</h2>
-          <p class="lead">
-            When you attend your first consultation we will investigate the
-            source of the problem by asking you some simple questions about the
-            history of your complaint and any other factors that are relevant to
-            the problem. We’ll want to know about your past health, and any
-            injuries or investigations you may have had as far back as you might
-            remember.
-          </p>
-          <p class="lead">
-            We will carry out a full examination before making a diagnosis and
-            deciding on the most appropriate treatment for you. This will
-            usually include an assessment of your posture, and identifying ease
-            or restriction of movement in relevant parts of your body.
-          </p>
-          <p class="lead">
-            The format may vary but most patients will probably be asked to
-            undress to their underwear for this part of the examination as
-            subtleties of contour and movement are necessary for an accurate
-            assessment.
-          </p>
-          <p class="lead">
-            Depending on our findings at this stage, further tests may be
-            required similar to those carried out by general practitioners, such
-            as reflexes, blood pressure or using a stethoscope to listen to your
-            heart or lungs. In some cases it may be necessary to refer you to
-            your GP or a specialist for further investigation i.e. X-ray or MRI.
-          </p>
-          <p class="lead">
-            You will be given a provisional diagnosis and our view of whether
-            osteopathic treatment can overcome or help to alleviate the symptoms
-            and the treatment approach will be explained. With your consent,
-            your first consultation will usually be concluded with the most
-            appropriate treatment for that day.
-          </p>
-        </div>
+      <div class="container">
+      <h2 class="container-header">What to Expect?</h2>
+      <p class="lead">
+                  When you attend your first consultation we will investigate the <b>source of the problem</b> by asking you some simple questions about the history of your complaint and any other factors that are relevant to the problem. We’ll want to know about your past health, and any injuries or investigations you may have had as far back as you might remember.
+      
+      <p class="lead">
+                  We will carry out a <b>full examination before making a diagnosis and deciding on the most appropriate treatment for you</b>. This will usually include an assessment of your posture, and identifying ease or restriction of movement in relevant parts of your body.
+      
+      <p class="lead">
+                  The format may vary but most patients will probably be asked to undress to their underwear for this part of the examination as subtleties of contour and movement are necessary for an accurate
+      assessment.
+      
+      <p class="lead">
+                  Depending on our findings at this stage, further tests may be required similar to those carried out by general practitioners, such as reflexes, blood pressure or using a stethoscope to listen to your heart or lungs. In some cases it may be necessary to refer you to your GP or a specialist for further investigation i.e. X-ray or MRI.
+      
+      <p class="lead">
+                  You will be given a <b>provisional diagnosis and our view of whether osteopathic treatment can overcome or help to alleviate the symptoms and the treatment approach will be explained</b>. With your consent, your first consultation will usually be concluded with the most appropriate treatment for that day.
+      
+      </div>
+      <a href="http://core-correct.com/wp-content/uploads/2019/01/patient-charter-core-correct-3.pdf" class="patient-charter-link" target="_blank">PATIENT CHARTER</a>
+      
       </div>
       <div id="massage-section" class="section-separator"></div>
       <div class="jumbotron jumbotron-fluid">
-        <div class="container massage-header">
-          <h1>OUR MASSAGE TYPES</h1>
-          <p class="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            eum, provident ipsa alias consequatur molestiae tempora eligendi
-            sint quis dolorum sequi voluptates repudiandae temporibus ex aliquid
-            beatae iusto similique unde?
-          </p>
-        </div>
-        <div class="container massage-types">
-          <div class="type-holder">
-            <div class="massage-image" id="sport-massage-image"></div>
-            <h4>SPORTS MASSAGE</h4>
-            <div class="massage-text">
-              <p>
-                Sports massage is a form of massage involving the manipulation
-                of soft tissue to benefit a person engaged in regular physical
-                activity. Soft tissue is connective tissue that has not hardened
-                into bone and cartilage; it includes skin, muscles, tendons,
-                ligaments and fascia (a form of connective tissue that lines and
-                ensheathes the other soft tissues).
-              </p>
-              <p>
-                Sports massage is designed to assist in correcting problems and
-                imbalances in soft tissue that are caused from repetitive and
-                strenuous physical activity and trauma. The application of
-                sports massage, prior to and after exercise, may enhance
-                performance, aid recovery and prevent injury.
-              </p>
-            </div>
-          </div>
-          <div class="type-holder">
-            <div class="massage-image" id="therapeutic-massage"></div>
-            <h4>THERAPEUTIC MASSAGE</h4>
-            <div class="massage-text">
-              <p>
-                Therapeutic Massage is a combination of Relaxation Massage and
-                Remedial Massage to not only relax your whole body and at the
-                same time, work through some of the muscle issues or “tight
-                spots” you may be experiencing.
-              </p>
-              <p>
-                Massage therapy aims to improve your circulation, which enhances
-                the delivery of oxygen and nutrients to muscle cells and helps
-                remove waste products or reduce swelling. These circulatory
-                effects of massage may have value in the treatment of some
-                inflammatory conditions, such as arthritis.
-              </p>
-              <p>
-                Massage therapy induces a relaxation response, which lowers your
-                heart rate, breathing rate, and blood pressure; plus boosts your
-                immune system; and generally decreases the physical effects of
-                stress
-              </p>
-            </div>
-          </div>
-          <div class="type-holder">
-            <div class="massage-image" id="deep-tissue"></div>
-            <h4>DEEP TISSUE MASSAGE</h4>
-            <div class="massage-text">
-              <p>
-                Deep tissue massage therapy is similar to Swedish massage, but
-                the deeper pressure is beneficial in releasing chronic muscle
-                tension. The focus is on the deepest layers of muscle tissue,
-                tendons and fascia (the protective layer surrounding muscles,
-                bones and joints).
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="container massage-header">
+      <h1>OUR MASSAGE TYPES</h1>
+      <p class="lead">
+                  Massage therapy is the manipulation of soft tissues of the body including, muscles, connective tissues, tendons, ligaments and joints. Massage Therapy is a clinically-oriented healthcare option that helps alleviate the discomfort associated with everyday and occupational stresses, muscular over-use and many chronic pain conditions.
+      
+      </div>
+      <div class="container massage-types">
+      <div class="type-holder">
+      <div class="massage-image" id="sport-massage-image">
+      <img src="http://core-correct.com/wp-content/uploads/2019/01/sport-massage-header_result.jpg" alt="Sports massage treatment"></div>
+      <h4>SPORTS MASSAGE</h4>
+      <div class="massage-text">
+      
+                      Sports massage is designed to assist in correcting problems and imbalances in soft tissue that are caused from repetitive and strenuous physical activity and trauma. The application of sports massage, prior to and after exercise, may enhance performance, aid recovery and prevent injury.
+      
+      </div>
+      </div>
+      <div class="type-holder">
+      <div class="massage-image" id="therapeutic-massage">
+      <img src="http://core-correct.com/wp-content/uploads/2019/01/therapeutic-header_result.jpg" alt="Therapeutic Massage"></div>
+      <h4>THERAPEUTIC</h4>
+      <div class="massage-text">
+      
+                      Therapeutic Massage is a combination of Relaxation Massage and Remedial Massage to not only relax your whole body and at the same time, work through some of the muscle issues or “tight spots” you may be experiencing.
+      
+      Massage therapy induces a relaxation response, which lowers your heart rate, breathing rate, and blood pressure; plus boosts your immune system; and generally decreases the physical effects of stress
+      
+      </div>
+      </div>
+      <div class="type-holder">
+      <div class="massage-image" id="deep-tissue">
+      <img src="http://core-correct.com/wp-content/uploads/2019/01/deep-tissue-header_result.jpg" alt="Deep tissue massage"></div>
+      <h4>DEEP TISSUE</h4>
+      <div class="massage-text">
+      
+                      Deep tissue massage therapy is similar to Swedish massage, but the deeper pressure is beneficial in releasing chronic muscle tension. The focus is on the deepest layers of muscle tissue, tendons and fascia (the protective layer surrounding muscles, bones and joints).
+      
+      </div>
+      </div>
+      </div>
       </div>
       <div id="classes-section" class="section-separator"></div>
       <div class="jumbotron jumbotron-fluid">
-        <div class="container massage-header">
-          <h1>OUR CLASSES</h1>
-          <p class="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            eum, provident ipsa alias consequatur molestiae tempora eligendi
-            sint quis dolorum sequi voluptates repudiandae temporibus ex aliquid
-            beatae iusto similique unde?
-          </p>
-        </div>
-        <div class="container massage-types">
-          <div class="type-holder">
-            <div class="massage-image" id="pilates-class"></div>
-            <h4>PILATES</h4>
-            <div class="massage-text">
-              <p>
-                Pilates is a method of exercise that consists of low-impact
-                flexibility and muscular strength and endurance movements.
-                Pilates emphasizes proper postural alignment, core strength and
-                muscle balance. Pilates is named for its creator, Joseph
-                Pilates, who developed the exercises in the 1920s.
-              </p>
-            </div>
-          </div>
-          <div class="type-holder">
-            <div class="massage-image" id="zumba-class"></div>
-            <h4>ZUMBA</h4>
-            <div class="massage-text">
-              <p>
-                Grooving to the beats of salsa, flamenco, and merengue music
-                feels more like a dance party than a workout, which is exactly
-                what makes Zumba so popular. The Latin-inspired dance workout is
-                one of the most popular group exercise classes in the world.
-              </p>
-              <p>
-                The high-energy classes are set to upbeat music and feature
-                choreographed dance numbers that you might see in a nightclub.
-                You don’t need to be a great dancer to feel welcome in a Zumba
-                class. With the tag line, “Ditch the Workout, Join the Party,”
-                the classes emphasize moving to the music and having a good
-                time, no rhythm required.
-              </p>
-            </div>
-          </div>
-          <div class="type-holder">
-            <div class="massage-image" id="gold-class"></div>
-            <h4>ZUMBA GOLD</h4>
-            <div class="massage-text">
-              <p>
-                Perfect For active older adults who are looking for a modified
-                Zumba®class that recreates the original moves you love at a
-                lower-intensity.
-              </p>
-              <p>
-                The design of the class introduces easy-to-follow
-                Zumba®choreography that focuses on balance, range of motion and
-                coordination. Come ready to sweat, and prepare to leave
-                empowered and feeling strong.
-              </p>
-              <p>
-                Class focuses on all elements of fitness: cardiovascular,
-                muscular conditioning, flexibility and balance!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <h2 class="container-header">CLASSES TIMETABLE</h2>
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th>PILATES</th>
-                <th>ZUMBA</th>
-                <th>ZUMBA GOLD</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>MONDAY</td>
-                <td>St. Patrick’s SNS, Skerries <span>7pm – 8pm</span></td>
-                <td>St. Patricks SNS Skerries<span>8pm – 9pm</span></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>TUESDAY</td>
-                <td>Skerries Sailing Club <span>9.30am – 10.30am</span></td>
-                <td></td>
-                <td>
-                  Skerries Community Centre <span>11.30am – 12.15pm</span>
-                </td>
-              </tr>
-              <tr>
-                <td>THURSDAY</td>
-                <td></td>
-                <td>Lusk Scouts Den, Lusk <span>8.15pm – 9.15pm</span></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="container massage-header">
+      <h1>OUR CLASSES</h1>
+      <p class="lead">
+      STOTT PILATES exercises help both men and women of all ages develop optimal strength, flexibility, endurance and posture, without building bulk or stressing joints.
+      Zumba &amp; Zumba Gold, a total workout, combining all elements of fitness – cardio, muscle conditioning, balance and flexibility.
+      
+      </div>
+      <div class="container massage-types">
+      <div class="type-holder">
+      <div class="massage-image" id="pilates-class">
+      <img src="http://core-correct.com/wp-content/uploads/2019/01/pilates-header_result.jpg" alt="Pilates"></div>
+      <h4>PILATES</h4>
+      <div class="massage-text">
+      
+                      Pilates is a method of exercise that consists of low-impact flexibility and muscular strength and endurance movements. Pilates emphasizes proper postural alignment, core strength and muscle balance. Pilates is named for its creator, Joseph Pilates, who developed the exercises in the 1920s.
+      
+      </div>
+      </div>
+      <div class="type-holder">
+      <div class="massage-image" id="zumba-class">
+      <img src="http://core-correct.com/wp-content/uploads/2019/01/zumba-header_result.jpg" alt="Zumba"></div>
+      <h4>ZUMBA</h4>
+      <div class="massage-text">
+      
+                      Grooving to the beats of salsa, flamenco, and merengue music feels more like a dance party than a workout, which is exactly what makes Zumba so popular. The Latin-inspired dance workout is one of the most popular group exercise classes in the world.
+      
+      </div>
+      </div>
+      <div class="type-holder">
+      <div class="massage-image" id="gold-class">
+      <img src="http://core-correct.com/wp-content/uploads/2019/01/zumba-gold-header_result.jpg" alt="Zumba Gold"></div>
+      <h4>ZUMBA GOLD</h4>
+      <div class="massage-text">
+      
+                      Perfect For active older adults who are looking for a modified Zumba®class that recreates the original moves you love at a lower-intensity.
+      
+      Class focuses on all elements of fitness: cardiovascular, muscular conditioning, flexibility and balance!
+      
+      </div>
+      </div>
+      </div>
+      <div class="container">
+      <h2 class="container-header">CLASSES TIMETABLE</h2>
+      <table>
+      <thead>
+      <tr>
+      <th></th>
+      <th>PILATES</th>
+      <th>ZUMBA</th>
+      <th>ZUMBA GOLD</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td>MONDAY</td>
+      <td>St. Patrick’s SNS, Skerries <span>7pm – 8pm</span></td>
+      <td>St. Patricks SNS Skerries<span>8pm – 9pm</span></td>
+      <td></td>
+      </tr>
+      <tr>
+      <td>TUESDAY</td>
+      <td>Skerries Rugby Club <span>9.30am – 10.30am</span></td>
+      <td></td>
+      <td>
+                        Skerries Community Centre <span>11.30am – 12.15pm</span></td>
+      </tr>
+      <tr>
+      <td>THURSDAY</td>
+      <td></td>
+      <td>Lusk Scouts Den, Lusk <span>8.15pm – 9.15pm</span></td>
+      <td></td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
       </div>
       <div id="prices-section" class="section-separator"></div>
       <div class="jumbotron jumbotron-fluid">
-        <div class="container massage-header"><h1>RATES</h1></div>
-        <div class="container massage-types">
-          <div class="type-holder">
-            <h4>OSTEOPATHY</h4>
-            <img src="images/spine(1).svg" class="icon-tag" alt="" />
-            <div class="massage-text price-box">
-              <h4>Initial consultation</h4>
-              <h6>60 minutes</h6>
-              <div><h4>€70 / £70</h4></div>
-            </div>
-            <div class="massage-text price-box">
-              <h4>Follow up treatment</h4>
-              <h6>30 minutes</h6>
-              <div><h4>55€ / £55</h4></div>
-            </div>
-          </div>
-          <div class="type-holder">
-            <h4>MASSAGE</h4>
-            <img src="images/massage.svg" class="icon-tag" alt="" />
-            <div class="massage-text price-box">
-              <h4>Half Hour Treatment</h4>
-              <h6>30 minutes</h6>
-              <div><h4>€40 / £40</h4></div>
-            </div>
-            <div class="massage-text price-box">
-              <h4>One Hour Treatment</h4>
-              <h6>60 minutes</h6>
-              <div><h4>€70 / £70</h4></div>
-            </div>
-          </div>
-          <div class="type-holder">
-            <h4>CLASSES</h4>
-            <img src="images/warrior.svg" class="icon-tag" alt="" />
-            <div class="massage-text price-box">
-              <h4>Pilates</h4>
-              <h6>8 Class Term</h6>
-              <div><h4>€100 / £100</h4></div>
-            </div>
-            <div class="massage-text price-box">
-              <h4>Zumba</h4>
-              <h6>6 Weeks term</h6>
-              <div><h4>€60 / £60</h4></div>
-              <p>€100/£100 2 classes per week</p>
-            </div>
-            <div class="massage-text price-box">
-              <h4>Zumba Gold</h4>
-              <h6>6 Week Term</h6>
-              <div><h4>€50 / £50</h4></div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <h3>PAYMENT POLICY</h3>
-          <p>
-            We request 24 hour’s notice of cancellation or rescheduling to allow
-            us to fill that slot in the diary. You will be requested that you
-            pay 50% of any missed treatment that you rebook and attend within 7
-            days. Any appointment that is missed and not rebooked will be
-            charged at 100% of the fee before a new appointment can be booked.
-            We hope you share our commitment to your appointment.
-          </p>
-        </div>
+      <div class="container massage-header">
+      <h1>RATES</h1>
+      We request 24 hour’s notice of cancellation or rescheduling to allow us to fill that slot in the diary. You will be requested that you pay 50% of any missed treatment that you rebook and attend within 7 days. Any appointment that is missed and not rebooked will be charged at 100% of the fee before a new appointment can be booked. We hope you share our commitment to your appointment.
+      
+      </div>
+      <div class="container massage-types">
+      <div class="type-holder">
+      <h4>OSTEOPATHY</h4>
+      <img src="http://core-correct.com/wp-content/uploads/2018/11/osteo.png" alt="" class="icon-tag">
+      <div class="price-text price-box">
+      <h4>Initial consultation</h4>
+      <h6>60 minutes</h6>
+      <div>
+      <h4>€70 / £70</h4>
+      </div>
+      </div>
+      <div class="price-text price-box">
+      <h4>Follow up treatment</h4>
+      <h6>30 minutes</h6>
+      <div>
+      <h4>55€ / £55</h4>
+      </div>
+      </div>
+      </div>
+      <div class="type-holder">
+      <h4>MASSAGE</h4>
+      <img src="http://core-correct.com/wp-content/uploads/2018/11/massage.png" alt="" class="icon-tag">
+      <div class="price-text price-box">
+      <h4>Half Hour Treatment</h4>
+      <h6>30 minutes</h6>
+      <div>
+      <h4>€40 / £40</h4>
+      </div>
+      </div>
+      <div class="price-text price-box">
+      <h4>One Hour Treatment</h4>
+      <h6>60 minutes</h6>
+      <div>
+      <h4>€70 / £70</h4>
+      </div>
+      </div>
+      </div>
+      <div class="type-holder">
+      <h4>CLASSES</h4>
+      <img src="http://core-correct.com/wp-content/uploads/2018/11/pilates.png" alt="" class="icon-tag">
+      <div class="price-text price-box">
+      <h4>Pilates</h4>
+      <h6>8 Class Term</h6>
+      <div>
+      <h4>€100</h4>
+      </div>
+      </div>
+      <div class="price-text price-box">
+      <h4>Zumba</h4>
+      <h6>6 Weeks term</h6>
+      <div>
+      <h4>€60</h4>
+      </div>
+      €100 2 classes per week
+      
+      </div>
+      <div class="price-text price-box">
+      <h4>Zumba Gold</h4>
+      <h6>6 Week Term</h6>
+      <div>
+      <h4>€50</h4>
+      </div>
+      </div>
+      </div>
+      </div>
       </div>
       <div id="contact-section" class="section-separator"></div>
       <div class="jumbotron jumbotron-fluid">
-          <div class="container">
-              <h2 class="container-header">Contact Us</h2>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-          </div>
-        </div>
-    </main>
-    <script>
-      $(".carousel").carousel({
-        interval: 3000
-      });
-    </script>
+      <div class="container massage-header">
+      <h1>CONTACT US</h1>
+      </div>
+      <div class="container contact-container">
+      <div class="contact-box">
+      <h4>Contact Channels</h4>
+      <h5><b>UK: </b><a class="map-link" href="tel:+44 7956 883801">+44 7956 883801</a></h5>
+      <h5><b>ROI: </b><a class="map-link" href="tel:+353 87 7415252">+353 87 7415252</a></h5>
+      <h5><b>EMAIL: </b><a class="map-link" href="mailto:corecorrect@gmail.com">corecorrect@gmail.com</a></h5>
+      <h5><b>Social Media:</b>
+      <div class="media-links">
+      <a class="map-link" href="https://www.facebook.com/corecorrecthealth/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a class="map-link hidden" href="" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a class="map-link hidden" href="" target="_blank"><i class="fab fa-instagram"></i></a></div></h5>
+      <h4 class="hidden">You can also Book online Now</h4>
+      <a class="nav-link book-link hidden" href="#">BOOK NOW</a>
+      
+      </div>
+      [wpforms id="348" title="false" description="false"]
+      
+      </div>
+      <div class="container contact-container">
+      <div class="contact-box">
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=ARCHES+64-66+GEDLING+PLACE" ,="" target="_blank">
+      <i class="fas fa-map-marker-alt"></i> MUSCLE BULL GYM
+      ARCHES 64-66 GEDLING PLACE
+      LONDON, ENGLAND
+      </a>
+      [google_map_easy id="2"]</div>
+      <div class="contact-box">
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Annoverna+Milverton+Skerries+Co.Dublin+Ireland" ,="" target="_blank">
+      <i class="fas fa-map-marker-alt"></i> MILVERTON THERAPY CLINIC, MILVERTON HOUSE, MILVERTON
+      SKERRIES, CO. DUBLIN
+      IRELAND
+      </a>
+      [google_map_easy id="1"]</div>
+      </div>
+      </div>
+      <footer>
+      <div>
+      <ul class="footer-list links-list">
+         <li>
+      This work is licensed under a Creative Commons License.  <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"></a></li>
+         <li><a class="footer-link" href=" http://core-correct.com/gdpr/" target="_blank">GDPR Privacy Notice</a></li>
+         <li><a href="http://core-correct.com/wp-content/uploads/2019/01/patient-charter-core-correct-3.pdf" class="footer-link" target="_blank">Patient Charter</a></li>
+      </ul>
+      <div class="footer-list footer-link-list">
+        <a class="footer-link" href="https://www.facebook.com/corecorrecthealth/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a class="footer-link hidden" href="" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a class="footer-link hidden" href="" target="_blank"><i class="fab fa-instagram"></i></a></div>
+      </div>
+      </footer>
+      <script type="application/ld+json"> {
+           "@context" : "http://schema.org", 
+           "@type" : "LocalBusiness",
+           "name" : "Core Correct Health", 
+           "image" : "http://core-correct.com/wp-content/uploads/2018/11/ccnewlogo.png", 
+           "telephone" : "+44 7956 883801", 
+           "email" : "corecorrect@gmail.com", 
+          "url" : "http://core-correct.com/", 
+      } </script>
   </body>
 </html>
